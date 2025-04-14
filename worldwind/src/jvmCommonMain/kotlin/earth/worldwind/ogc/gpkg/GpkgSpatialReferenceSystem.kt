@@ -19,7 +19,7 @@ import java.io.Serializable
 class GpkgSpatialReferenceSystem : Serializable {
     @DatabaseField(columnName = NAME, dataType = DataType.STRING, canBeNull = false)
     lateinit var name: String
-    @DatabaseField(columnName = ID, dataType = DataType.INTEGER, id = true)
+    @DatabaseField(columnName = ID, dataType = DataType.INTEGER, id = true, canBeNull = false)
     var id: Int = 0
     @DatabaseField(columnName = ORGANIZATION, dataType = DataType.STRING, canBeNull = false)
     lateinit var organization: String
